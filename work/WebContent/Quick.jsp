@@ -22,7 +22,7 @@
 	</div>
 
 	<div class = "work">22/04/28
-		<button><a href="22_04_28/index.jsp">회원관리, 게시판</a></button>
+		<button><a href="22_04_28/index.jsp">회원관리,게시판</a></button>
 	</div>
 </body>
 </html>
