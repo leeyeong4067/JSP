@@ -1,0 +1,256 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>main</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<style type="text/css">
+
+			/* 배경 이미지 */
+			
+			body {
+				background-image:url(images/background/wood.jpg);
+			}
+
+			/* 사이트 대문 */
+			
+			header {
+				width:100%;
+				top:0px;
+				left:0px;
+			}
+
+			/* 대문 글자 */
+
+			.title {
+				color:white;
+				text-align:center;
+			}
+
+			/* 로그인 */
+
+			aside {
+				position: absolute;
+				left: 95%;
+				top: 2%;
+				margin: 0px 0px 0px 0px;
+			}
+
+			/* 메뉴 */
+
+			nav {
+				margin-top:120px;
+			}
+
+			/* 메뉴 */
+
+			.topmenu {
+				list-style:none;
+				width:99.1%;
+				background: black;
+				padding:10px;
+				text-align:center;
+			}
+
+			/* 메뉴 글자 */
+
+			.topmenu li {
+				display:inline;
+				margin-left:0px;
+				padding-left:50px;
+			}
+
+			.topmenu a {
+				font:1.5em "Times New";
+				color:#fff;
+				text-decoration:none;
+			}
+
+			/* 베스트 셀러 타이틀 */
+		
+			.sell_title {
+				text-align:center;
+				color:white;
+			}
+
+			/*  베스트 셀러 전체 틀 */
+				
+			.sell_body {
+				font:15pt "맑은 고딕", 돋움;
+				color:black;
+				width:70%;
+				height: 100%;
+				background-color:white;
+				border:4px solid black;
+				border-radius:10px;
+				box-shadow:0px 0px 20px #000000;
+				margin:0 auto;
+				text-align:center;
+			}
+
+			/* 베스트 셀러 테이블 */
+
+			.sell_table {
+				text-align:center;
+				margin: 0 auto;
+			}
+
+			/*  헤드셋 1,2,3,4 */
+				
+			.bookFrame {
+				color:black;
+				padding:1px;
+				margin:1px;
+				width: 200px;
+				height: 300px;
+				background:white;
+				border:1px solid black;
+				text-align:center;
+			}
+
+			.bookTag {
+				color:skyblue;
+				text-align:center;
+				line-height: 0px;
+				font:10pt "맑은 고딕", 돋움;
+			}
+
+			.bookDesc {
+				color:black;
+				text-align:center;
+				line-height: 0px;
+				font:12pt "맑은 고딕", 돋움;
+			}
+
+			.search {
+				height: 41px;
+				width: 395px;
+				border: 1px solid black;
+				position: absolute;
+				top:5%;
+				left: 50%;
+				margin: 0px 0px 0px -148px;
+				background: #ffffff;
+			}
+
+			.input {
+				font-size: 16px;
+				width: 325px;
+				padding: 10px;
+				border: 0px;
+				outline: none;
+				float: left;
+			}
+
+			.button {
+				width: 50px;
+				height: 100%;
+				border: 0px;
+				background: #1b5ac2;
+				float: right;
+				color: #ffffff;
+			}
+
+			h4 {
+				font-size: 25px;
+				line-height: 0px;
+				text-align: center;
+			}
+
+			.logo {
+				position: absolute;
+				left: 50%;
+				margin: -15px 0px 0px -370px;
+			}
+
+			.line {
+				position: relative;
+				left: 50%;
+				border: 1px solid black;
+				width: 0.1px;
+				height: 200px;
+			}
+
+			sidemenu {
+				position: absolute;
+				left:5%;
+				top:40%;
+				border: 1px black;
+			}
+
+			.select {
+				font:15pt "맑은 고딕", 돋움;
+				line-height:150%;
+				color:black;
+				background:white;
+				border:1px solid black;
+				width:100px;
+				height:100%;
+				list-style:none;
+				text-align:center;
+				padding: 10px;
+			}
+
+			.select li {
+				text-align:center;
+			}
+
+			/* 사이드 메뉴 링크 */
+
+			.select a {
+				color:black;
+				text-decoration:none;
+			}
+
+			.selectName {
+				line-height: 0px;
+			}
+
+			.write_body {
+				position: relative;
+				left:50%;
+				margin: 50px 50px 50px -250px;
+				width: 500px;
+				background-color:white;
+				text-align: left;
+			}
+
+		</style>
+		<header>
+			<aside>
+				<p class="login"><button type="button" onclick="location.href='login.html'">로그인</button></p>
+			</aside>
+			<div class="search">
+				<p class="logo"><a href="index.html"><img src="images/logo/brand.png"></a></p>
+				<input class="input" type="text" placeholder="검색어 입력">
+				<button class="button" type="button" onclick="location.href='searchView.html'">검색</button>
+			</div>
+		</header>
+	</head>
+	<body>
+		<nav>
+			<ul class="topmenu">
+				<li><a href="comp.html">소개</a></li>
+				<li><a href="purchase.html">구매</a></li>
+				<li><a href="event.html">행사</a></li>
+				<li><a href="myPage.html">내정보</a></li>
+				<li><a href="board.html">게시판</a></li>
+				<li><a href="faq.html">고객센터</a></li>
+			</ul>
+		</nav>	
+			<div class="sell_body">
+				<div class="write_body">
+					<form action="insertPro.jsp" method="post">
+						<select name = "bTag">
+							<option value = "선택">1대1 문의</option>
+						</select>
+						<input type = "text" name = "bTitle" value = "제목"><br>
+						<textarea name = "bString" cols='50' rows='15'>내용</textarea><br>
+						<input type = "submit" value = "작성">
+						<button type="button" onclick="location.href='board.html' ">취소</button>
+					</form>
+					
+				</div>
+			</div>
+	</body>
+</html>
