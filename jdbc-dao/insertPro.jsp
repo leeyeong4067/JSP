@@ -14,7 +14,7 @@
     	String name = request.getParameter("name");
 		
 		loginDao dao = new loginDao();
-		loginDto dto = new loginDto(id, name, pwd);
+		loginDto dto = new loginDto(name, id, pwd);
 		dao.insert(dto);
 		
 		

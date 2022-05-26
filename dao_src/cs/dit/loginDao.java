@@ -73,11 +73,12 @@ public class loginDao {
 			
 			while(rs.next()) {
 				//1. rs 에서 데이터를 가져온다
-				String id = rs.getString("id");
-				String name = rs.getString("name");
-				String pwd = rs.getString("pwd");
+				loginDto dto = new loginDto();
+				
+				dto.setId(rs.getString("id"));
+				dto.setName(rs.getString("name"));
+				dto.setPwd(rs.getString("pwd"));
 				//2. 가져온 데이터를 loginDto로 만든다
-				loginDto dto = new loginDto(id, name, pwd);
 				//3  loginDto를 ArrayList에 추가한다.
 				dtos.add(dto);
 			}

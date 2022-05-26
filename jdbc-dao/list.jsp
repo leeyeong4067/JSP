@@ -52,8 +52,8 @@ pageContext.setAttribute("dtos", dtos);
 		for(loginDto dto : dtos) {
 	%>		
 			<td><a href="updateForm.jsp?id=<%=dto.getId() %>"><%=dto.getId() %></a></td>
-			<td><%=dto.getName() %></td>
 			<td><%=dto.getPwd() %></td>
+			<td><%=dto.getName() %></td>
 		</tr>
 	<%
 		}
